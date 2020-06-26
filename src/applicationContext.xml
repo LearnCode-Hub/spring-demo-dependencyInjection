@@ -17,9 +17,6 @@
  		<property name="cost" value="5L"/>	
  		<constructor-arg value="A"/>	
  	</bean>
- 	
- <bean id="carb" class="com.learncode.demospring.CarB">
- </bean>
 
 </beans>
 
