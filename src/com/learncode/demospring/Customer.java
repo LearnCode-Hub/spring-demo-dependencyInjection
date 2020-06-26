@@ -9,9 +9,7 @@ public class Customer {
 		// TODO Auto-generated method stub
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Car carA = context.getBean("cara",Car.class);
-		Car carB = context.getBean("carb",Car.class);
 		carA.getPrice();
-		carB.getPrice();
 	}
 
 }
