@@ -3,19 +3,20 @@ package com.learncode.demospring;
 public class CarA implements Car {
 String carName;
 String cost;
-String modelNumber;
+int modelNumber;
 
-	public CarA(String carName){
+	public CarA(String carName,int modelNumber){
 		this.carName=carName;
+		this.modelNumber=modelNumber;
 	}
 	
 	public void setCost(String cost) {
 		this.cost = cost;
 	}
 
-	public void setModelNumber(String modelNumber) {
+/*	public void setModelNumber(int modelNumber) {
 		this.modelNumber = modelNumber;
-	}
+	} */
 
 	@Override
 	public void getPrice() {
