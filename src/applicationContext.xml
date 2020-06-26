@@ -8,15 +8,17 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	
-    <!-- Define your beans here -->
     
     <!-- define the dependency -->
     
- 	<bean id="cara" class="com.learncode.demospring.CarA">
- 		<property name="modelNumber" value="0132"/>
- 		<property name="cost" value="5L"/>	
- 		<constructor-arg value="A"/>	
+ 	<bean id="cara" class="com.learncode.demospring.CarA" depends-on="welcome" >
+ 		<property name="cost" value="5L"/>
+ 		<constructor-arg value="0132" type="int"/>	 <!-- Using attribute tag <constructor-arg value="0132" index="1"/> -->
+ 		<constructor-arg value="A"/>		         <!-- Using attribute tag <constructor-arg value="A" index="0"/> -->
  	</bean>
+ 	
+ <bean id="welcome" class="com.learncode.demospring.Welcome">
+ </bean>
 
 </beans>
 
