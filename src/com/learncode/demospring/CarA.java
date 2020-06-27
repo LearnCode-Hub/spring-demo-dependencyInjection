@@ -1,10 +1,11 @@
 package com.learncode.demospring;
 
 public class CarA implements Car {
-String carName;
-String cost;
-int modelNumber;
-
+private String carName;
+private String cost;
+private int modelNumber;
+    
+	//Setting carName and modelNumber using Constructor
 	public CarA(String carName,int modelNumber){
 		this.carName=carName;
 		this.modelNumber=modelNumber;
@@ -20,7 +21,9 @@ int modelNumber;
 
 	@Override
 	public void getPrice() {
-		System.out.println("Cost for car "+carName+" Model Number "+modelNumber+" is "+cost);
+		System.out.println("Car "+carName);
+		System.out.println("Model Number "+modelNumber);
+		System.out.println("Base Model Cost "+cost);
 
 	}
 
