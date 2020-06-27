@@ -13,7 +13,7 @@
     <!-- define the dependency -->
     
  	<bean id="cara" class="com.learncode.demospring.CarA">
- 		<property name="modelNumber" value="0132"/>
+ 		<property name="modelNumber" value="HTK+"/>
  		<property name="cost" value="5L"/>	
  		<constructor-arg value="A"/>	
  	</bean>
