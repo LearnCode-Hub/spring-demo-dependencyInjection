@@ -13,8 +13,8 @@
     
  	<bean id="cara" class="com.learncode.demospring.CarA" depends-on="welcome" >
  		<property name="cost" value="5L"/>
- 		<constructor-arg value="0132" type="int"/>	 <!-- Using attribute tag <constructor-arg value="0132" index="1"/> -->
- 		<constructor-arg value="A"/>		         <!-- Using attribute tag <constructor-arg value="A" index="0"/> -->
+ 		<constructor-arg value="0132" type="int"/>	 <!-- Using attribute index <constructor-arg value="0132" index="1"/> -->
+ 		<constructor-arg value="A"/>		         <!-- Using attribute index <constructor-arg value="A" index="0"/> -->
  	</bean>
  	
  <bean id="welcome" class="com.learncode.demospring.Welcome">
