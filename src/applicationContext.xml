@@ -16,7 +16,7 @@
  	<bean id="cara" class="com.learncode.demospring.CarA" depends-on="welcome" >
  		<constructor-arg value="A"/>	
  		<property name="cost" value="5L"/> <!-- This property is mandatory, if you don't set this property then it will throw an exception -->
- 		<property name="modelNumber" value="0132"/> <!-- This property is optional, if you don't set any value to this property then it will take default value -->
+ 		<property name="modelNumber" value="HTK+"/> <!-- This property is optional, if you don't set any value to this property then it will take default value -->
  	</bean>
  	
  <bean id="welcome" class="com.learncode.demospring.Welcome">
